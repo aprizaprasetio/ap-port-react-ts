@@ -9,9 +9,10 @@ function Index({isVisible, onClose}: ICommand) {
 
     return (
         <div
-            className={`absolute bottom-0 translate-x-1/2 right-1/2  w-5/6 h-full select-none ${isVisible ? 'block' : 'hidden'}`}>
+            className={`absolute bottom-0 translate-x-1/2 right-1/2 w-full lg:w-5/6 h-full select-none ${isVisible ? 'block' : 'hidden'}`}>
             <div className="pt-5 flex flex-col items-start h-full text-gray-50">
-                <header className="px-6 py-3 ml-6 w-1/4 bg-slate-950 rounded-t-3xl flex justify-between items-center">
+                <header
+                    className="px-6 py-3 ml-6 w-fit lg:w-1/4 bg-slate-950 rounded-t-3xl flex gap-3 justify-between items-center">
                     <h3>Command</h3>
                     <button
                         className="text-red-800 rounded-full w-5 h-5 p-1 flex justify-center items-center hover:bg-red-100"

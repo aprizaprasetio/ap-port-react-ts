@@ -2,13 +2,12 @@ import ICard from "../types/ICard";
 
 function Card({className, img}: ICard) {
     return (
-        <a
-            href="#"
-            className={`relative block overflow-hidden rounded-lg border border-gray-50 p-4 sm:p-6 lg:p-8 ${className}`}
+        <div
+            className={`relative block overflow-hidden rounded-lg border border-gray-50 cursor-default shadow-2xl  shadow-[#7F00FF] select-none p-4 sm:p-6 lg:p-8 ${className}`}
         >
-  <span
-      className="absolute inset-x-0 bottom-0 h-1.5 bg-gradient-to-r from-[#7F00FF] to-[#E100FF]"
-  ></span>
+            {/*<span*/}
+            {/*    className="absolute inset-x-0 bottom-0 h-1.5 bg-gradient-to-r from-[#7F00FF] to-[#E100FF]"*/}
+            {/*></span>*/}
 
             <div className="sm:flex sm:justify-between sm:gap-4">
                 <div>
@@ -35,7 +34,7 @@ function Card({className, img}: ICard) {
                     mainly to React because it is my favorite Front End library right now.
                 </p>
             </div>
-        </a>
+        </div>
     );
 }
 
