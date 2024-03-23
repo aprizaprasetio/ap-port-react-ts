@@ -1,7 +1,7 @@
-import Landing from "./pages/Landing";
+import Highlights from "./pages/Highlights/Highlights.tsx";
 
 function App() {
-    return <Landing/>;
+  return <Highlights />;
 }
 
 export default App;
