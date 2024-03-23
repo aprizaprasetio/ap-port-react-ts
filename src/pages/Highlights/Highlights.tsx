@@ -1,9 +1,8 @@
-import Topbar from "../../components/Topbar/Topbar.tsx";
+import { Link } from "@tanstack/react-router";
 
 function Highlights() {
   return (
     <>
-      <Topbar />
       <main className="flex flex-col justify-center">
         <article className="flex flex-col items-center justify-center gap-4 py-20">
           <header>
@@ -98,12 +97,12 @@ function Highlights() {
         <article className="pt-20 pb-8 text-lg font-semibold">
           <p>
             Hello 👋 You can reach me at the{" "}
-            <a
+            <Link
               className="px-1 transition duration-300 bg-white text-slate-800 hover:text-white hover:bg-transparent hover:underline"
-              href="#"
+              to="/social-media"
             >
-              social channels
-            </a>
+              Social Media
+            </Link>
           </p>
         </article>
       </footer>
