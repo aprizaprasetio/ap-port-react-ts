@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import svgr from "vite-plugin-svgr";
 import unpluginInjectPreload from 'unplugin-inject-preload/vite'
 import { TanStackRouterVite } from '@tanstack/router-vite-plugin'
 
